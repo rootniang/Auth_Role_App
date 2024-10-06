@@ -47,14 +47,15 @@
             @csrf
             <img class="mb-4" src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
             <h1 class="h3 mb-3 fw-normal">Se connecter</h1>
-
-            <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="email" type="email" name="email" placeholder="name@example.com">
-            <label for="floatingInput">Adresse mail</label>
+            <x-input-error :messages="$errors->get('email')" class="mt-2" />  
+            <div class="form-floating mb-3">   
+                <input type="email" class="form-control" id="email" type="email" name="email" placeholder="name@example.com">
+                <label for="floatingInput">Adresse mail</label>
             </div>
-            <div class="form-floating">
-            <input type="password" class="form-control" id="password" name="password" placeholder="Password">
-            <label for="floatingPassword">Mot de passe</label>
+            <x-input-error :messages="$errors->get('password')" class="mt-2" />  
+            <div class="form-floating">  
+                <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                <label for="floatingPassword">Mot de passe</label>
             </div>
 
             <div class="form-check text-start my-3">

@@ -48,10 +48,26 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#" class="nav-link link-body-emphasis">
+                    <a class="nav-link link-body-emphasis" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                     <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
                     Utilisateurs
                     </a>
+                    <div class="collapse leftmar" id="collapseExample">
+                        <ul class="nav nav-pills flex-column mb-auto">
+                            <li>
+                                <a href="{{ route('roles.index')}}" class="nav-link link-body-emphasis">
+                                    <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+                                    Gestion des roles 
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link link-body-emphasis">
+                                <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+                                Gestion des utilisateurs
+                                </a>
+                            </li>
+                        </ul>  
+                    </div>      
                 </li>
                 </ul>
                 <hr>

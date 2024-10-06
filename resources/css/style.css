@@ -7,6 +7,9 @@ main {
     overflow-x: auto;
     overflow-y: hidden;
 }
+div#collapseExample {
+    padding-left: 9%;
+}
 .formsig {
     max-width: 330px;
     padding: 1rem;
